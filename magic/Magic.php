@@ -20,9 +20,9 @@ class Magic {
     // the __call()- Magic-Method is automatically used.
     public function __call($method, $parameter) {
         echo "The method '". $method . "' is called";
-        // echo "<pre>";
-        // print_r($parameter);
-        // echo "</pre>";
+        echo "<pre>";
+        print_r($parameter);
+        echo "</pre>";
     }
 
     // If a complete object is used as a string (with echo), PHP uses the return value of the __toString().

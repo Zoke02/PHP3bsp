@@ -14,7 +14,7 @@ echo $m->lastname;
 echo "<br>";
 
 //Magic method: __call(); (blahblah can be named to anything u wish.)
-$m->blahblah("Username", "E-Mail", 4);
+$m->save("Username", "E-Mail", 4);
 echo "<br>";
 
 //Magic method: __toString();

@@ -60,6 +60,5 @@ class Circle {
         } else {
         $this->radius = $new_r;
         }
-    }
-    
+    }   
 }

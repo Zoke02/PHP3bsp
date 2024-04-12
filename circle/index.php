@@ -3,17 +3,19 @@
 include "Circle.php";
 
 $k = new Circle (3);
+
 echo "Area is " . $k->area_of_circle();
 echo "<br>";
 echo "Diameter is " . $k->diameter_of_circle();
 echo "<br>";
 echo "Circumference is " . $k->circumference_of_circle();
 echo "<br>";
-$k->set_radius(6);
+$k->set_radius(5);
 echo "New diameter is " . $k->diameter_of_circle();
 echo "<br>";
+echo "<br>";
 
-$user_input = 2;
+$user_input = -2;
 // With this u can try the code and in catch u can get a answer of your choise.
 try {
     $k->set_radius($user_input);
@@ -25,7 +27,7 @@ try {
     echo "<br>";
 } finally {
     // This code will be executed in every case.
-    echo "That was probably it. <br>";
+    echo "FINALLY ends here. <br> <br>";
 }
 // __destrukt() (Check it out in Circle.php)
 unset($k);

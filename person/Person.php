@@ -15,7 +15,7 @@ class Person {
     }
 
     // Public Method, which can be accessed from outside.
-    public function introduce() { //$this-> refers to Person class (Row-6)
+    public function introduce() { //$this-> refers to Person class (Row-3)
         return "Hello, my name is " . $this->firstname . ".";
     }
 
