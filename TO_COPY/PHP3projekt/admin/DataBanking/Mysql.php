@@ -4,9 +4,21 @@ namespace WIFI\PHP3\DataBanking;
 class Mysql 
 {   
 
+    // Singleton Implementation starts.
+    private static ?Mysql $instanz = null;
+
+    public static function getInstanz(): Mysql
+    {
+        if (!self::$instanz) {
+            self::$instanz = new Mysql();
+        }
+        return self::$instanz;
+    }
+    // Singleton Implementation finishes.
+
     private \mysqli $db;
 
-    public function __construct() 
+    private function __construct() 
     {
         $this->connect();
     }

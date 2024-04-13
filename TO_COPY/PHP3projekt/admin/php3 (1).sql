@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 12, 2024 at 08:12 PM
+-- Generation Time: Apr 13, 2024 at 03:21 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -40,7 +40,10 @@ CREATE TABLE `autos` (
 --
 
 INSERT INTO `autos` (`id`, `licenceplate`, `brand_id`, `color`, `year`) VALUES
-(1, 'VB-33-TD', 3, 'Black', '2020');
+(2, 'SL-123AB', 2, 'Blue', '2000'),
+(3, 'SL-22AX', 1, 'Green', '2010'),
+(4, 'SL-123AB', 3, 'Black', '2020'),
+(5, 'SL-123AB', 3, 'Blue', '2000');
 
 -- --------------------------------------------------------
 
@@ -115,7 +118,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `autos`
 --
 ALTER TABLE `autos`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `brand`

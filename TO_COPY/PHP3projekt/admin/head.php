@@ -11,6 +11,7 @@
     <nav>
         <ul>
             <li style="font-weight:bold;font-size:2rem"><a style="text-decoration:none;color:white" href="index.php">Home</a></li>
+            <li style="font-weight:bold;font-size:2rem"><a style="text-decoration:none;color:white" href="carslist.php">Cars List</a></li>
             <li style="font-weight:bold;font-size:2rem"><a style="text-decoration:none;color:white" href="logout.php">Logout</a></li>
             <li>Logged as: <?php echo $_SESSION["benutzername"] ?></li>
         </ul>

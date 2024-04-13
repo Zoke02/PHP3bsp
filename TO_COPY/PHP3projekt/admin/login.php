@@ -13,7 +13,7 @@ if (!empty($_POST))
     $validate->is_formular_filled($_POST["passwort"], "Password");
 
     if (!$validate->is_errors()) {
-        $db = new Mysql();
+        $db = Mysql::getInstanz();
         $sql_username = $db->escape($_POST["benutzername"]);
         $result = $db->query("SELECT * FROM user WHERE username = '{$sql_username}'");
         $username = $result->fetch_assoc();
