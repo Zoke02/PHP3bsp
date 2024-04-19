@@ -15,7 +15,7 @@ abstract class Animal {
     // row 15 and 17 are the same as just row 16 but u put private befor string.
     // private readonly string $name;
     public function __construct(private string $name) {
-        // $this->name = $n;
+        // $this->name = $name;
     }
 
     // Public Final Function get_name();

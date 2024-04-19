@@ -10,7 +10,7 @@ class Tiere implements AnimalInterface,\Iterator {
     // Typdeclaration (Type-Hint): Animals
     // Only objects that inherit from "Animals" or are "Animals" themselves may be passed as arguments to this method
     public function add(Animal $tier): void {
-        $this->farm[] = $tier; 
+        $this->farm[] = $tier;
     }
     public function output(): string {
         $return = "";
